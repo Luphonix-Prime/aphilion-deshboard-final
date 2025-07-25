@@ -53,5 +53,11 @@ def get_all_frameworks():
             'description': "India's national cybersecurity incident response body.",
             'icon': 'fas fa-flag',
             'color': '#8e24aa'
+        },
+        'soc2_type_2': {
+            'name': 'SOC2 Type 2',
+            'description': 'A cloud security framework that addresses the five core elements of cloud security: security of the cloud, security of the data, security of the application, security of the infrastructure, and security of the controls.',
+            'icon': 'fas fa-shield-alt',
+            'color': '#9c27b0'
         }
     }

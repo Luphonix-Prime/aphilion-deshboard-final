@@ -522,6 +522,47 @@
                             {% if framework_controls.append(control) %}{% endif %}
                         {% elif framework_name == 'CERT-IN' and control in ['Incident Reporting', 'Vulnerability Disclosure', 'Cyber Threat Intelligence', 'Security Advisory Compliance', 'Critical Infrastructure Protection', 'Cyber Security Framework Implementation', 'Sectoral CERT Coordination', 'Malware Analysis & Response', 'Phishing & Social Engineering Defense', 'Mobile & IoT Security', 'Cloud Security Guidelines', 'Cyber Forensics', 'Capacity Building Programs', 'International Cooperation', 'Research & Development'] %}
                             {% if framework_controls.append(control) %}{% endif %}
+                        {% elif framework_name == 'SOC2 Type 2' and control in [
+                            "Access Controls",
+                            "Role-based access",
+                            "Multi-factor authentication (MFA)",
+                            "Password policy enforcement",
+                            "User provisioning and de-provisioning",
+                            "Logging and monitoring of systems",
+                            "Security incident detection and response",
+                            "Intrusion detection/prevention systems (IDS/IPS)",
+                            "Change approval workflows",
+                            "Version control systems (Git, etc.)",
+                            "Testing of changes before deployment",
+                            "Risk assessments (periodic and ad hoc)",
+                            "Vulnerability scanning and remediation",
+                            "Risk assessment of third-party service providers",
+                            "Contracts with security clauses",
+                            "Acceptable use policy",
+                            "Security awareness training",
+                            "Data classification policy",
+                            "Disaster recovery and business continuity planning (DR/BCP)",
+                            "Redundancy and failover mechanisms",
+                            "System performance monitoring",
+                            "Incident response and uptime reporting",
+                            "Capacity planning",
+                            "Data validation checks (input/output)",
+                            "Transaction logging and reconciliation",
+                            "Job monitoring and alerts for failed jobs",
+                            "Automated/manual review of transactions",
+                            "Quality assurance (QA) procedures",
+                            "Encryption of data at rest and in transit",
+                            "Access controls to confidential data",
+                            "Data loss prevention (DLP) tools",
+                            "Data retention and secure disposal policies",
+                            "Confidentiality agreements (NDAs)",
+                            "Privacy policy documentation",
+                            "Consent and opt-out mechanisms",
+                            "Data subject access request handling",
+                            "Personal data minimization",
+                            "Data breach notification procedures"
+                        ] %}
+                            {% if framework_controls.append(control) %}{% endif %}
                         {% endif %}
                     {% endfor %}
                     {% if controls_by_framework.update({framework_name: framework_controls}) %}{% endif %}
